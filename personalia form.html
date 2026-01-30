@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+
+<form action="#" method="post">
+
+<fieldset>
+<legend>Personalia Form Contents</legend>
+
+<label for="fname">First Name:</label>
+<input type="text" id="fname" name="fname"><br><br>
+
+<label for="lname">Last Name:</label>
+<input type="text" id="lname" name="lname"><br><br>
+
+<label for="email">Email ID:</label>
+<input type="email" id="email" name="email"><br><br>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password"><br><br>
+
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob"><br><br>
+
+<label for="week">Select a Week:</label>
+<input type="week" id="week" name="week"><br><br>
+
+<label>Enter a date before 1980-01-01:</label>
+<input type="date" max="1980-01-01"><br><br>
+
+<label>Enter a date after 1980-01-01:</label>
+<input type="date" min="1980-01-01"><br><br>
+
+<label>Birthday (Date and Time):</label>
+<input type="datetime-local"><br><br>
+
+<label>Birthday (Month and Year):</label>
+<input type="month"><br><br>
+
+<label>Select Time:</label>
+<input type="time"><br><br>
+
+<label>Select any one course:</label><br>
+<input type="radio" name="course" value="html"> HTML<br>
+<input type="radio" name="course" value="css"> CSS<br>
+<input type="radio" name="course" value="java"> Java<br><br>
+
+<label>Select Favorite Language:</label><br>
+<input type="radio" id="css" name="fav_language" value="css">
+<label for="css">CSS</label><br>
+
+<input type="radio" id="html" name="fav_language" value="html">
+<label for="html">HTML</label><br>
+
+<input type="radio" id="javascript" name="fav_language" value="javascript">
+<label for="javascript">JavaScript</label><br><br>
+
+<label>Select Vehicles:</label><br>
+<input type="checkbox" id="bike" name="vehicle" value="bike">
+<label for="bike">I have a bike</label><br>
+
+<input type="checkbox" id="car" name="vehicle" value="car">
+<label for="car">I have a car</label><br>
+
+<input type="checkbox" id="scooty" name="vehicle" value="scooty">
+<label for="scooty">I have a scooty</label><br><br>
+
+<label for="favcolor">Select Color:</label>
+<input type="color" id="favcolor" name="favcolor"><br><br>
+
+<label for="cars">Choose cars (3 visible):</label><br>
+<select id="cars" name="cars" size="3" multiple>
+    <option value="fiat" selected>Fiat</option>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="audi">Audi</option>
+</select><br><br>
+
+<label>Select a Browser:</label>
+<input list="browsers">
+<datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Edge">
+    <option value="Safari">
+</datalist><br><br>
+
+<label for="myfile">Select a file:</label>
+<input type="file" id="myfile" name="myfile"><br><br>
+
+<label for="comments">Comments:</label><br>
+<textarea id="comments" rows="5" cols="30">The cat was playing</textarea><br><br>
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button><br><br>
+
+<input type="submit" value="Submit">
+<input type="reset"><br><br>
+
+<label for="quantity">Quantity (Multiple of 10):</label>
+<input type="number" id="quantity" min="0" max="100" step="10" value="30"><br><br>
+
+<label for="vol">Volume:</label>
+<input type="range" id="vol" min="0" max="50"><br><br>
+
+<label for="gsearch">Search Google:</label>
+<input type="search" id="gsearch"><br><br>
+
+<label for="homepage">Add your homepage:</label>
+<input type="url" id="homepage"><br><br>
+
+<label>First name (Read only):</label>
+<input type="text" value="John" readonly><br><br>
+
+<label>First name (Disabled):</label>
+<input type="text" value="John" disabled><br><br>
+
+<label for="phone">Enter number (123-45-678):</label>
+<input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678"><br><br>
+
+<label>Points (Multiple of 3):</label>
+<input type="number" step="3"><br><br>
+
+<label>Image as Submit Button:</label><br>
+<input type="image" src="c:\Users\chitr\Desktop\lavanya\submit.jpg" width="100" height="100" alt="Submit" width="48" height="40">
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
